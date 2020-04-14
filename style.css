@@ -1,0 +1,9 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-size: 2em;
+}
