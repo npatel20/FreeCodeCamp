@@ -1,9 +1,49 @@
 *{
-	margin: 0px;
-	padding: 0px;
 	box-sizing: border-box;
 }
 
-h2 {
-	font-size: 2em;
+.aqua {
+	background-color: aquamarine;
+}
+
+/*learn about CSS classes*/
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+}
+
+.spider-man {
+	width: 50%;
+	height: auto;
+	border-radius: 50%
+}
+
+/*CSS borders have properties like style, color and width.*/
+
+/*Three important properties control the space that surrounds each HTML element: padding, margin, and border.*/
+/*An element's padding controls the amount of space between the element's content and its border.*/
+/*An element's margin controls the amount of space between an element's border and surrounding elements.*/
+
+.padding {
+	background-color: yellow;
+	border: 5px solid black;
+	width: fit-content;
+	padding: 50px;
+	margin: 20px;
+}
+
+.outer {
+	background-color: blue;
+	border: 5px solid black;
+	width: fit-content;
+}
+
+/*attributes selector*/
+
+[type='radio'] {
+  margin: 10px 0px 15px 0px;
+}
+
+  [type='checkbox'] {
+  margin: 10px 0px 15px 0px;
 }
