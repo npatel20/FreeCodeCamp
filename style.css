@@ -1,5 +1,13 @@
 *{
 	box-sizing: border-box;
+	padding: 10px;
+}
+										
+										/*BASIC CSS*/
+
+										/*use :root to add css variables*/
+:root {
+	--paragraph-color: blue;
 }
 
 .aqua {
@@ -15,7 +23,7 @@ h1 {
 .spider-man {
 	width: 50%;
 	height: auto;
-	border-radius: 50%
+	border-radius: 50%;
 }
 
 /*CSS borders have properties like style, color and width.*/
@@ -47,3 +55,116 @@ h1 {
   [type='checkbox'] {
   margin: 10px 0px 15px 0px;
 }
+
+										/*hex values in css*/
+
+/*We usually use decimals, or base 10 numbers, which use the symbols 0 to 9 for each digit. Hexadecimals (or hex) are 
+base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 represent the values zero 
+to nine. Then A,B,C,D,E,F represent the values ten to fifteen. Altogether, 0 to F can represent a digit in hexadecimal, 
+giving us 16 total possible values. You can fiThe RGB value for white looks like this:
+
+rgb(255, 255, 255)
+
+Instead of using six hexadecimal digits like you do with hex code, with RGB you specify the brightness of each color with a number between 0 and 255.
+The RGB value for white looks like this:
+
+rgb(255, 255, 255)
+
+Instead of using six hexadecimal digits like you do with hex code, with RGB you specify the brightness of each color with a number between 0 and 255.
+
+If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So RGB, which starts counting from zero, has the exact same number of possible values as hex code.
+If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So RGB, which starts counting from zero, has the exact same number of possible values as hex code.nd more information about hexadecimal numbers here.
+
+In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. 
+For example, #000000 is black and is also the lowest possible value. 
+
+/*The digit 0 is the lowest number in hex code, and represents a complete absence of color.*/
+
+/*The digit F is the highest number in hex code, and represents the maximum possible brightness.*/
+
+/*For example, red's hex code #FF0000 can be shortened to #F00. This shortened form gives one digit for red, one digit for 
+green, and one digit for blue.*/
+
+.orange {
+	color: #FFA500;
+}
+
+.white {
+	color: #FFFFFF;
+	background-color: #0000FF;
+	width: fit-content;
+}
+
+.blue {
+	color: #1E90FF;
+}
+
+.green {
+	color: #00FF00;
+}
+
+											/*rgb values in css*/
+
+/*The RGB value for white looks like this:
+
+rgb(255, 255, 255)
+
+Instead of using six hexadecimal digits like you do with hex code, with RGB you specify the brightness of each color 
+with a number between 0 and 255.
+
+If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So RGB, which 
+starts counting from zero, has the exact same number of possible values as hex code.*/
+
+.rgb {
+	color: rgb(0, 0, 255);
+}
+
+											/*use of custom css variable*/
+/*not working*/
+/*attach a fallback value to css variable for debugging*/
+/*To make use of inheritance, CSS variables are often defined in the :root element.*/
+/*By creating your variables in :root, they will be available globally and can be accessed from any other selector 
+in the style sheet.*/
+.para1 {
+	color: var(--paragraph-color, orange);
+	opacity: 0.3
+	/*background-color: var(--paragraph-color);*/
+}
+
+										/*Applied Visual Design*/
+
+/*a in rgba stands for alpha/level of opacity*/
+.para {
+	background-color: rgba(45, 45, 45, 0.1);
+}
+
+/*The box-shadow property takes values for
+
+offset-x (how far to push the shadow horizontally from the element),
+offset-y (how far to push the shadow vertically from the element),
+blur-radius,
+spread-radius and
+color, in that order.
+The blur-radius and spread-radius values are optional.
+
+*/
+/*Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.*/
+
+.para1 {
+	box-shadow: 0 10px 20px rgba(0,0,255,0.19), 0 6px 6px rgba(0,0,255,0.23);
+	border-radius: 15px;
+	line-height: 35px;
+	/*relative positioning -- learn more about this*/
+	position: relative;
+	top: 15px;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none; /* removes underline */
+}
+
+/*When the position of an element is set to relative, it allows you to specify how CSS should move it 
+relative to its current position in the normal flow of the page. It pairs with the CSS offset properties 
+of left or right, and top or bottom. These say how many pixels, percentages, or ems to move the item away 
+from where it is normally positioned.*/
