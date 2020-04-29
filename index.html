@@ -3,7 +3,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+	<!-- font-awesome -->
+<!-- <script src="https://kit.fontawesome.com/491f01ccc5.js" crossorigin="anonymous"></script> -->
 	<!-- google fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<!-- css -->
@@ -26,29 +27,54 @@
 	<!-- HTML5 introduces more descriptive HTML tags. These include main, header, footer, nav, video, article, section and others. -->
 
 	<!-- The main HTML5 tag helps search engines and other developers find the main content of your page. -->
+	<header>
+			<h1>lensbynrj</h1>
+			<nav id="navbar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+	</header>
+
+
 	<main>
-	<h1>lensbynrj</h1>
+
 	<p class="aqua">This is an Amateur Photography Website</p>
 
 	<!-- use image as a link -->
+	<div class="img">
 	<a href="#">
-	<img src="images/spider-man.jpg" alt="spider-man" class="spider-man"><br>
+	<img src="images/spider-man.jpg" alt="spider-man" class="spider-man" id="first">
 	</a>
+	</div>
+	<!-- <div>
+	<a href="#">
+	<img src="images/spider-man.jpg" alt="spider-man" class="spider-man" id="second">
+	</a>
+	</div> -->
 
-	<div>
+	<div class="NH">
 	<a href="#footer">New Hampshire</a>
 	</div>
-	<p>This is a link to <a href="http://shilpasthreadingandspa.com/" target="_blank">Shilpa's Threading & Spa</a></p>
+	<p class="sts">This is a link to <a href="http://shilpasthreadingandspa.com/" target="_blank">Shilpa's Threading & Spa</a></p>
 </main>
 
 <!-- It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. This allows assistive technologies to create a linked relationship between the label and the child input element. -->
 
 <!-- When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type radio and checkbox report their values from the value attribute. -->
+
+<!-- The section element is also new with HTML5, and has a slightly different semantic meaning than article. An article is for standalone content, and a section is for grouping thematically related content. They can be used within each other, as needed. For example, if a book is the article, then each chapter is a section. When there's no relationship between groups of content, then use a div. -->
+
+<!-- HTML5 introduced the figure element, along with the related figcaption. Used together, these items wrap a visual representation (like an image, diagram, or chart) along with its caption. This gives a two-fold accessibility boost by both semantically grouping related content, and providing a text alternative that explains the figure. -->
+
 <div class="outer">
 <h5 class="padding">
 	Avengers, Assemble!
 </h5>
 </div>
+
+<div class="key"></div>
 
 <h1 class="orange">I am Orange</h1>
 <h1 class="white">I am White</h1>
@@ -63,6 +89,39 @@
 <p class="para1">
 	Cat ipsum dolor sit amet, jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Go into a room to decide you didn't want to be in there anyway. I like big cats and i can not lie kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Meow i could pee on this if i had the energy for slap owner's face at 5am until human fills food dish yet scamper. Knock dish off table head butt cant eat out of my own dish scratch the furniture. Make meme, make cute face. Sleep in the bathroom sink chase laser but pee in the shoe. Paw at your fat belly licks your face and eat grass, throw it back up kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
 </p>
+<!-- <div class="justblue"></div> -->
+
+<!-- The value of the for attribute must be the same as the value of the id attribute of the form control. -->
+
+<!-- The fieldset tag surrounds the entire grouping of radio buttons to achieve this. It often uses a legend tag to provide a description for the grouping, which is read by screen readers for each choice in the fieldset element.
+
+The fieldset wrapper and legend tag are not necessary when the choices are self-explanatory, like a gender selection. Using a label with the for attribute for each radio button is sufficient. -->
+
+<!-- <form>
+  <fieldset>
+    <legend>Choose one of these three items:</legend>
+    <input id="one" type="radio" name="items" value="one">
+    <label for="one">Choice One</label><br>
+    <input id="two" type="radio" name="items" value="two">
+    <label for="two">Choice Two</label><br>
+    <input id="three" type="radio" name="items" value="three">
+    <label for="three">Choice Three</label>
+  </fieldset>
+</form> 
+-->
+
+<!-- Instead of using em or px to size text, you can use viewport units for responsive typography. Viewport units, like percentages, are relative units, but they are based off different items. Viewport units are relative to the viewport dimensions (width or height) of a device, and percentages are relative to the size of the parent container element.
+
+The four different viewport units are:
+
+vw (viewport width): 10vw would be 10% of the viewport's width.
+vh (viewport height): 3vh would be 3% of the viewport's height.
+vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
+vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width). -->
+<div class="box-container">
+<div class="box1">div 1</div>
+<div class="box2">div 2</div>
+</div>
 
 <form action="">
 	<p>Three things I love about Photography</p>
@@ -105,10 +164,10 @@
 
   <!-- bs js -->
 
-<!--   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- -->
+
 
 
 </body>

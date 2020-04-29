@@ -21,10 +21,34 @@ h1 {
 }
 
 .spider-man {
-	width: 50%;
+	/*position: fixed;*/
+	width: 30%;
 	height: auto;
 	border-radius: 50%;
+	animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
+
+@keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: 249px;
+    }
+  }
+
+.img {
+	margin: auto;
+}
+
+/*.justblue {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+margin: auto;*/
 
 /*CSS borders have properties like style, color and width.*/
 
@@ -168,3 +192,171 @@ a:hover {
 relative to its current position in the normal flow of the page. It pairs with the CSS offset properties 
 of left or right, and top or bottom. These say how many pixels, percentages, or ems to move the item away 
 from where it is normally positioned.*/
+
+#navbar {
+	/*position: fixed;*/
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: rgba(0,0,255,0.19);
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+
+ nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  									/*z-index*/
+ /*When elements are positioned to overlap (i.e. using position: absolute | relative | fixed | sticky), 
+ the element coming later in the HTML markup will, by default, appear on the top of the other elements. 
+ However, the z-index property can specify the order of how elements are stacked on top of one another. 
+ It must be an integer (i.e. a whole number and not a decimal), and higher values for the z-index 
+ property of an element move it higher in the stack than those with lower values.*/
+
+/* #first {
+ 	position: absolute;
+ 	z-index: 2;
+ }
+
+ #second {
+ 	position: absolute;
+ 	left: 40px;
+ 	top: 40px;
+ 	z-index: 1;
+ }*/
+
+ /*Hue is what people generally think of as 'color'. If you picture a spectrum of colors starting with 
+ red on the left, moving through green in the middle, and blue on right, the hue is where a color fits 
+ along this line. In hsl(), hue uses a color wheel concept instead of the spectrum, where the angle of 
+ the color on the circle is given as a value between 0 and 360.*/
+
+ form {
+ 	background-color: hsl(0, 10%, 50%);
+ }
+
+ /*The first argument specifies the direction from which color transition starts - it can be stated as 
+ a degree, where 90deg makes a vertical gradient and 45deg is angled like a backslash. The following 
+ arguments specify the order of colors used in the gradient.*/
+
+ .NH {
+ 	background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+ }
+
+ .sts {
+ 	background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+ }
+
+ /*To change the scale of an element, CSS has the transform property, along with its scale() function. 
+ The following code example doubles the size of all the paragraph elements on the page:*/
+
+/* p {
+ 	transform: scale(2);
+ }*/
+
+ /*.spider-man:hover {
+ 	transform: scale(1.5);
+ }*/
+
+
+ /* skew element
+ p {
+  transform: skewX(-32deg);
+}*/
+
+										/*keyframes*/
+.key {
+	width: 70%;
+	height: 50px;
+	background: black;
+	margin: 50px auto;
+	border-radius: 20px;
+	position: relative;
+}
+
+.key {
+	animation-name: colorful;
+	animation-duration: 3s;
+}
+
+@keyframes colorful {
+	0% {
+		background-color: turquoise;
+		top: 0px;						/*only works when position is relative*/
+	}
+	25% {
+		background-color: blue;
+		top: 25px;
+	}
+	50% {
+		background-color: #CCFFFF;
+		top: 50px;
+	}
+	100% {
+		background-color: #FFCCCC;
+		top: 0px;
+	}
+}
+
+/*You want the button to stay highlighted.
+
+This can be done by setting the animation-fill-mode property to forwards. */
+
+button:hover {
+    animation-name: background-color;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes background-color {
+    100% {
+      background-color: blue;
+    }
+  }
+
+
+ /*When elements have a specified position, such as fixed or relative, the CSS offset properties 
+ right, left, top, and bottom can be used in animation rules to create movement.*/
+
+ /*Another animation property is the animation-iteration-count, which allows you to control how 
+ many times you would like to loop through the animation. */
+
+ 										/*flexbox*/
+.box-container {
+	height: 500px;
+	display: flex;
+}
+
+.box1 {
+	background-color: blue;
+	height: 50%;
+	width: 50%;
+}
+
+.box2 {
+	background-color: turquoise;
+	height: 50%;
+	width: 50%;
+}
+
+/*There is a shortcut available to set several flex properties at once. The flex-grow, flex-shrink, and 
+flex-basis properties can all be set together by using the flex property.
+
+For example, flex: 1 0 10px; will set the item to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;.
+
+The default property settings are flex: 0 1 auto;.
+
+*/
+
+/*The final property for flex items is align-self. This property allows you to adjust each item's alignment 
+individually, instead of setting them all at once. This is useful since other common adjustment techniques 
+using the CSS properties float, clear, and vertical-align do not work on flex items.
+
+align-self accepts the same values as align-items and will override any value set by the align-items property.*/
+
+										/*css grids*/
+/*In CSS Grid, the parent element is referred to as the container and its children are called items.*/
